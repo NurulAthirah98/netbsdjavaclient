@@ -21,7 +21,7 @@ public class Server
             System.out.println("Waiting for a client ..."); 
   
             socket = server.accept(); 
-            System.out.println("Client waalaikumussalam"); 
+            System.out.println("Client assalamualaikum received"); 
   
             // takes input from the client socket 
             in = new DataInputStream( 
