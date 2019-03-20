@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 {
     int sock = 0, valread;  
     struct sockaddr_in server;
-    char *hello = "Hello from client";
+    char *Assalamualaikum = "Assalamualaikum from client";
     
     char buffer[1024] = {0}; 
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) 
@@ -37,8 +37,8 @@ int main(int argc, char const *argv[])
         printf("\nConnection Failed \n"); 
         return -1; 
     } 
-    send(sock , hello , strlen(hello) , 0 ); 
-    printf("Hello message sent\n");
+    send(sock , Assalamualaikum , strlen(Assalamualaikum) , 0 ); 
+    printf("Assalamualaikum message sent\n");
     valread = read( sock, buffer, 1024);
     printf("%s\n",buffer );
     return 0;
@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
     }
     
     
-    printf("Hello message sent\n"); 
+    printf("Assalamualaikum message sent\n"); 
     valread = read( sock , buffer, 1024); 
     printf("%s\n",buffer ); 
     return 0; 
